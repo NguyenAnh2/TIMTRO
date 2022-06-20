@@ -9,6 +9,9 @@ html
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
+                                        /* header  */
 .header
 {
     display: flex;
@@ -25,7 +28,7 @@ html
 {
     margin-left: 12px;
 }
-.sign-li a 
+.sign-li div
 {
     display: flex;
     justify-content: center;
@@ -37,14 +40,251 @@ html
     color: black;
     font-weight: bold;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.sign-li a:hover 
+.sign-li div:hover 
 {
     opacity: 0.8;
 } 
+.over-layout
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255, 0.5);
+    z-index: 100;
+}
 
 
+                                            /* sign up */
+                            
+.sign-up
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 3px 3px 15px 1px black;
+    z-index: 101;
+    display: none;
+}
+
+.sign-up-header
+{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.sign-up-username
+{
+    text-transform: uppercase;
+}
+.sign-up-username-input
+{
+    margin-bottom: 12px;
+    margin-top: 6px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: lightcyan;
+    border-radius: 8px;
+}
+.sign-up-password
+{   
+    text-transform: uppercase;
+}
+.sign-up-password-input
+{
+    margin-bottom: 12px;
+    margin-top: 6px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: lightcyan;
+    border-radius: 8px;
+}
+.sign-up-btn                                            
+{
+    cursor: pointer;
+    background-color: lightblue;
+    outline: none;
+    border: none;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.2s linear;
+}
+.sign-up-btn:hover
+{
+    background-color: blue;
+    color: white;
+}
+
+.sign-up-transfer
+{
+    text-align: end;
+    font-size: 18px;
+
+}
+
+                                        /* sign in  */
+.sign-in
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 3px 3px 15px 1px black;
+    z-index: 101;
+    display: none;
+}
+
+.sign-in-header
+{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.sign-in-username
+{
+    text-transform: uppercase;
+}
+.sign-in-username-input
+{
+    margin-bottom: 12px;
+    margin-top: 6px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: lightcyan;
+    border-radius: 8px;
+}
+.sign-in-password
+{   
+    text-transform: uppercase;
+}
+.sign-in-password-input
+{
+    margin-bottom: 12px;
+    margin-top: 6px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: lightcyan;
+    border-radius: 8px;
+}
+.sign-in-btn                                            
+{
+    cursor: pointer;
+    background-color: lightblue;
+    outline: none;
+    border: none;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.2s linear;
+}
+.sign-in-btn:hover
+{
+    background-color: blue;
+    color: white;
+}
+
+.sign-in-transfer
+{
+    text-align: end;
+    font-size: 18px;
+}
+.transfer-to-sign-in
+{
+    text-align: end;
+    font-size: 18px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.transfer-to-sign-up
+{
+    text-align: end;
+    font-size: 18px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+                                            /* post news  */
+
+.post-news                                        
+{
+    position: fixed;
+    display: flex;
+    width: 1000px;
+    padding: 24px 48px;
+    border: 1px solid black;
+    border-radius: 8px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    background-color: white;
+    z-index: 101;
+    display: none;
+}
+.post-news-header
+{
+    color: black;
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.post-news input
+{
+    padding: 8px 12px;
+    font-size: 16px;
+}
+.post-news label
+{
+    font-size: 18px;
+    margin: 4px 0;
+}
+.post-news button 
+{
+    background-color: aqua;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 12px;
+    padding: 12px 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.post-news button:hover
+{
+    background-color: lightgreen;
+    color: black;
+}
+
+
+
+
+                                            /* category */
 .category {
     background-color: aquamarine;
     width: 100%;
@@ -79,6 +319,7 @@ html
 }
 
 
+                                        /* search */
 .search
 {
     background-color: lightsalmon;
@@ -127,6 +368,9 @@ html
     color: black;
     background-color: lightgreen;
 }
+
+
+                                        /* quick-select */
 .introduce
 {
     margin-top: 40px;
@@ -139,12 +383,6 @@ html
 {
     font-size: 18px;
     line-height: 32px;
-}
-
-
-.select
-{
-    
 }
 .select-ul
 {
@@ -195,6 +433,8 @@ html
     color: black;
 }
 
+
+                                                    /* list  */
 .list 
 {
     border: 1px solid rgb(199, 199, 199);
@@ -268,14 +508,6 @@ html
     font-size: 18px;
 }
 
-.list-li-area 
-{
-}
-
-.list-li-place 
-{
-}
-
 .list-li-desc 
 {
     font-size: 18px;
@@ -292,6 +524,8 @@ html
     align-items: center;
     justify-content: space-between;
 }
+
+                                            /* list user*/
 
 .list-li-contact-user 
 {
@@ -329,6 +563,7 @@ html
 }
 
 
+                                            /* contact */
 .contact
 {
     margin-top: 48px;
@@ -349,6 +584,7 @@ html
     justify-content: space-around;
     align-items: center;
     max-width: 100%;
+    margin-bottom: 48px;
 }
 .pay
 {
@@ -383,10 +619,12 @@ html
 .pay-phone:hover 
 {
     color: green;
+    transform: translateY(-3px);
 }
 .pay-zalo:hover 
 {
     color: green;
+    transform: translateY(-3px);
 }
 .post
 {
@@ -421,10 +659,12 @@ html
 .post-phone:hover
 {
     color: green;
+    transform: translateY(-3px);
 }
 .post-zalo:hover
 {
     color: green;
+    transform: translateY(-3px);
 }
 .hotline 
 {
@@ -459,32 +699,17 @@ html
 .hotline-phone:hover
 {
     color: green;
+    transform: translateY(-3px);
 }
 .hotline-zalo:hover
 {
     color: green;
-}
-.contact-submit
-{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    border: none;
-    padding: 12px 18px;
-    background-color: green;
-    margin-bottom: 48px;
-    margin-top: 32px;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-.contact-submit:hover
-{
-    bottom: 5px;
+    transform: translateY(-3px);
 }
 
 
+
+                                                /* footer */
 .footer
 {
     margin-bottom: 48px;

@@ -8,21 +8,117 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="img-logo">
-                <img src="image/logowweb.png" alt="logo" class="logo">
-            </div>
-            <div class="sign">
-                <ul class="sign-ul">
-                    <li class="sign-li"><a href="#">Đăng nhâp <ion-icon name="log-in-outline"></ion-icon></a></li>
-                    <li class="sign-li"><a href="#">Đăng ký <ion-icon name="key-outline"></ion-icon></a></li>
-                    <li class="sign-li"><a href="#">Đăng tin <ion-icon name="add-circle-outline"></ion-icon></a></li>
-                </ul>
-            </div>
-        </header>
-    </div>
 
+        <!-- header  -->
+        <div class="container">
+            <header class="header">
+                <div class="img-logo">
+                    <img src="image/logowweb.png" alt="logo" class="logo">
+                </div>
+                <div class="sign">
+                    <ul class="sign-ul">
+                        <li class="sign-li sign-in-main"><div>Đăng nhập <ion-icon name="log-in-outline"></ion-icon></div></li>
+                        <li class="sign-li sign-up-main"><div>Đăng ký <ion-icon name="key-outline"></ion-icon></div></li>
+                        <li class="sign-li add-news-main"><div>Đăng tin <ion-icon name="add-circle-outline"></ion-icon></div></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <div class="over-layout"></div>
+
+        <!-- sign up table -->
+        <div class="sign-up">
+            <div class="sign-up-header">
+                Đăng Ký
+            </div>
+            <label class="sign-up-username" for="username">Số Điện Thoại Hoặc Email</label>
+            <input placeholder="Tài Khoản" class="sign-up-username-input" type="text"  id="username">
+
+            <label class="sign-up-password" for="password">Nhập Mật Khẩu</label>
+            <input placeholder="Mật Khẩu" class="sign-up-password-input" type="password"  id="password">
+
+            <label class="sign-up-password" for="password-confirm">Nhập Lại Mật Khẩu</label>
+            <input placeholder="Mật Khẩu" class="sign-up-password-input" type="password"  id="password-confirm">
+
+            <button type="submit" class="sign-up-btn">
+                Đăng ký 
+            </button>
+
+            <p class="sign-up-transfer">Bạn đã có tài khoản?
+                <p class="transfer-to-sign-up">
+                    Đăng nhập ngay!
+                </p>
+            </p>
+        </div>
+        
+
+        <!-- sign in table  -->
+        <div class="sign-in">
+            <div class="sign-in-header">
+                Đăng Nhập
+            </div>
+            <label class="sign-in-username" for="username">Nhập Tài Khoản</label>
+            <input placeholder="Tài Khoản" class="sign-in-username-input" type="text"  id="username">
+
+            <label class="sign-in-password" for="password">Nhập Mật Khẩu</label>
+            <input placeholder="Mật Khẩu" class="sign-in-password-input" type="password"  id="password">
+
+
+            <button type="submit" class="sign-in-btn">
+                Đăng Nhập 
+            </button>
+
+            <p class="sign-up-transfer">Bạn chưa có tài khoản?
+                <p class="transfer-to-sign-in">
+                    Đăng ký ngay!
+                </p>
+            </p>
+        </div>
+
+
+        <div class="post-news">
+            <h3 class="post-news-header">
+                Đăng tin mới
+            </h3>
+            <label for="news-address">
+                Địa chỉ cho thuê
+            </label>
+            <input type="text" name="" id="news-address" placeholder="Địa chỉ">
+
+            <label for="news-header" class="news-header">
+                Nhập tiêu đề
+            </label>
+            <input type="text" name="" id="news-header" placeholder="Tiêu đề">
+
+            <label for="news-photos">
+                Thêm hình ảnh
+            </label>
+            <input type="file" name="" id="news-photos">
+
+            <label for="news-desc">
+                Thông tin mô tả
+            </label>
+            <input type="text" name="" id="news-desc" placeholder="Thêm mô tả">
+
+            <label for="news-cost">
+                Nhập giá cho thuê
+            </label>
+            <input type="number" name="" id="news-cost" min="0" step="100000" placeholder="Giá">
+
+            <label for="news-area">
+                Nhập diện tích 
+            </label>
+            <input type="number" name="" id="news-area" min="0" step="5" placeholder="Diện tích">
+
+            <label for="news-phonenumber">
+                Nhập số điện thoại
+            </label>
+            <input type="tel" name="" id="news-phonenumber" placeholder="Số điện thoại">
+
+            <button type="submit">Đăng tin</button>
+        </div>
+        <!-- category -->
         <div class="category">
             <ul class="category-ul">
                 <li class="category-li"><a href="#">Trang chủ</a></li>
@@ -32,6 +128,8 @@
             </ul>
         </div>
 
+
+        <!-- search  -->
         <div class="container">
             <div class="search">
                 <ul class="search-ul">
@@ -51,6 +149,8 @@
             </div>
         </div>
 
+
+        <!-- quick-select  -->
         <div class="container">
             <div class="quick-select">
                 <div class="introduce">
@@ -82,6 +182,8 @@
             </div>
         </div>
         
+
+        <!-- list  -->
         <div class="container">
             <div class="list">
                 <h2 class="list-header">
@@ -495,6 +597,8 @@
             </div>
         </div>
 
+
+        <!-- contact  -->
         <div class="container">
             <div class="contact">
                 <div class="contact-header">
@@ -539,10 +643,10 @@
                     </div>
                 </div>
 
-            <button type="submit" class="contact-submit">Gửi yêu cầu</button>
         </div>
-    </div>
+        </div>
         
+        <!-- footer -->
         <footer class="footer">
             <div class="footer-col">
                 <div class="website">
@@ -594,6 +698,7 @@
         </footer>
         
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
