@@ -112,6 +112,7 @@ html
     align-items: center;
     font-weight: bold;
     color: white;
+    border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
     width: 80%;
@@ -119,8 +120,13 @@ html
     padding-bottom: 12px;
     margin: 0 auto;
     border: none;
+    transition: 0.2s linear;
 }
-
+.search-li button:hover
+{
+    color: black;
+    background-color: lightgreen;
+}
 .introduce
 {
     margin-top: 40px;
@@ -374,7 +380,14 @@ html
     color: black;
     text-decoration: none;
 }
-
+.pay-phone:hover 
+{
+    color: green;
+}
+.pay-zalo:hover 
+{
+    color: green;
+}
 .post
 {
     display: flex;
@@ -405,7 +418,14 @@ html
     color: black;
     text-decoration: none;
 }
-
+.post-phone:hover
+{
+    color: green;
+}
+.post-zalo:hover
+{
+    color: green;
+}
 .hotline 
 {
     display: flex;
@@ -436,7 +456,14 @@ html
     color: black;
     text-decoration: none;
 }
-
+.hotline-phone:hover
+{
+    color: green;
+}
+.hotline-zalo:hover
+{
+    color: green;
+}
 .contact-submit
 {
     position: relative;
