@@ -11,7 +11,6 @@ html
 }
 
 
-                                        /* header  */
 .header
 {
     display: flex;
@@ -466,7 +465,6 @@ html
     margin-top: 32px;
 }
 
-
 .list-li-header
 {
     color: red;
@@ -720,10 +718,6 @@ html
     background-color: cadetblue;
     display: flex;
     justify-content: space-around;
-}
-.website
-{
-
 }
 .website-header
 {

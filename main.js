@@ -1,16 +1,16 @@
-var signUp = document.querySelector('.sign-up-main')
-var signUpTable = document.querySelector('.sign-up')
+let signUp = document.querySelector('.sign-up-main')
+let signUpTable = document.querySelector('.sign-up')
 
-var addNews = document.querySelector('.add-news-main')
-var addNewsTable = document.querySelector('.post-news')
+let addNews = document.querySelector('.add-news-main')
+let addNewsTable = document.querySelector('.post-news')
 
-var overLayout = document.querySelector('.over-layout')
+let overLayout = document.querySelector('.over-layout')
 
-var signIn = document.querySelector('.sign-in-main')
-var signInTable = document.querySelector('.sign-in')
+let signIn = document.querySelector('.sign-in-main')
+let signInTable = document.querySelector('.sign-in')
 
-var transferSignUp = document.querySelector('.transfer-to-sign-in')
-var transferSigniIn = document.querySelector('.transfer-to-sign-up')
+let transferSignUp = document.querySelector('.transfer-to-sign-in')
+let transferSigniIn = document.querySelector('.transfer-to-sign-up')
 
 
 signUp.onclick = function(e) {
